@@ -29,6 +29,11 @@
         .a2 {
             font-size: 20px;
         }
+        hr {
+           height: 1px;
+           background-color: #424242;
+           border: none;
+        }
         .container {
             flex: 1;
             width: 90%;
@@ -97,7 +102,7 @@
             border-radius: 10px;
         }
 
-        .footer2 {
+        .footer-upper {
             margin: 0; /* Remove top margin */
             padding-top: 0px;
             padding-bottom: 0px;
@@ -130,7 +135,9 @@
 <body>
 
     <div class="container">
-        <h1>Once Human Resources</h1>
+        <h1>
+            Once Human Resources
+        </h1>
 
         <div class="tabs">
             <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
@@ -140,7 +147,7 @@
             <button class="tab-link" onclick="openTab(event, 'fishing')">Fishing</button>
             <button class="tab-link" onclick="openTab(event, 'server-transfer')">Server Transfer Checklist</button>
             <!--
-            <button class="tab-link" onclick="openTab(event, 'template')">Template</button>
+            <button class="tab-link" onclick="openTab(event, 'tabID')">TabName</button>
             -->
         </div>
 
@@ -327,7 +334,7 @@
         </div>
     </div>
     <div class="footer-container">
-        <div class="footer2">
+        <div class="footer-upper">
             <p>
                 Created by
                 <a class="a2" href="https://github.com/FlameBeast25" target="_blank">
