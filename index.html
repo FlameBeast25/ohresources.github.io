@@ -20,11 +20,19 @@
         p {
             font-size: 20px;
         }
+        minor {
+            font-size: 20px;
+            color: #757575;
+        }
         li {
             font-size: 20px;
+            line-height: 40px;
         }
         a {
             font-size: 16px;
+            color: #84bdf1;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
         .a2 {
             font-size: 20px;
@@ -85,10 +93,13 @@
         th {
             background-color: #272727;
         }
-        a {
-            color: #84bdf1;
-            text-decoration: none;
-            transition: color 0.3s ease;
+        /* Set consistent column widths for both tables */
+        table th:nth-child(1), table td:nth-child(1) {
+            width: 25%; /* Adjust percentage as needed */
+        }
+
+        table th:nth-child(2), table td:nth-child(2) {
+            width: 75%; /* Adjust percentage as needed */
         }
         a:hover {
             color: #46a7ff;
@@ -102,7 +113,7 @@
             border-radius: 10px;
         }
 
-        .footer2 {
+        .footer-upper {
             margin: 0; /* Remove top margin */
             padding-top: 0px;
             padding-bottom: 0px;
@@ -129,7 +140,6 @@
         .footer a:hover {
             background-color: #1e1e1e;
         }
-
     </style>
 </head>
 <body>
