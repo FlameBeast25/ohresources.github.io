@@ -26,6 +26,9 @@
         a {
             font-size: 16px;
         }
+        .a2 {
+            font-size: 20px;
+        }
         .container {
             flex: 1;
             width: 90%;
@@ -85,19 +88,31 @@
         a:hover {
             color: #46a7ff;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
+        .footer-container {
             background-color: #1e1e1e;
             color: #f0f0f0;
-            border-radius: 10px;
-            margin-top: 40px;
-            position: relative;
-            bottom: 0;
+            text-align: center;
+            padding: 0px;
             width: 100%;
+            border-radius: 10px;
         }
+
+        .footer2 {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .footer {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
         .footer a {
-            margin: 0 10px;
             padding: 10px 20px;
             background-color: #555;
             color: #fff;
@@ -105,9 +120,11 @@
             border-radius: 20px;
             transition: background-color 0.3s ease;
         }
+
         .footer a:hover {
             background-color: #1e1e1e;
         }
+
     </style>
 </head>
 <body>
@@ -274,13 +291,23 @@
             </ul>
         </div>
     </div>
-
-    <div class="footer">
-        <p>Created by FlameBeast25</p>
-        <a href="https://youtube.com/flamebeast25" target="_blank">YouTube</a>
-        <a href="https://twitch.tv/flamebeast_25" target="_blank">Twitch</a>
-        <a href="#" target="_blank">Discord</a>
+    <div class="footer-container">
+        <div class="footer2">
+            <p>
+                Created by
+                <a class="a2" href="https://github.com/FlameBeast25" target="_blank">
+                    FlameBeast25
+                </a>
+            </p>
+        </div>
+        <div class="footer">
+            <a href="https://youtube.com/flamebeast25" target="_blank">YouTube</a>
+            <a href="https://twitch.tv/flamebeast_25" target="_blank">Twitch</a>
+            <a href="#" target="_blank">Discord</a>
+        </div>
     </div>
+
+    
 
     <script>
         function openTab(evt, tabName) {
