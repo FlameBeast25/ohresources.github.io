@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Once Human Resources</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
@@ -24,7 +24,15 @@
             font-size: 20px;
         }
         a {
-            font-size: 30px;
+            font-size: 16px;
+        }
+        .a2 {
+            font-size: 20px;
+        }
+        hr {
+           height: 1px;
+           background-color: #424242;
+           border: none;
         }
         .container {
             flex: 1;
@@ -75,7 +83,7 @@
             text-align: left;
         }
         th {
-            background-color: #333;
+            background-color: #272727;
         }
         a {
             color: #84bdf1;
@@ -85,33 +93,169 @@
         a:hover {
             color: #46a7ff;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
+        .footer-container {
+            background-color: #161616;
             color: #f0f0f0;
-            border-radius: 10px;
-            margin-top: 40px;
-            position: relative;
-            bottom: 0;
+            text-align: center;
+            padding: 0px;
             width: 100%;
+            border-radius: 10px;
         }
+
+        .footer2 {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .footer {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
         .footer a {
-            margin: 0 10px;
             padding: 10px 20px;
-            background-color: #555;
+            background-color: #2e2e2e;
             color: #fff;
             text-decoration: none;
             border-radius: 20px;
             transition: background-color 0.3s ease;
         }
+
         .footer a:hover {
             background-color: #1e1e1e;
         }
+
     </style>
 </head>
 <body>
-    <h1>Are you looking for Once Human Resources?</h1>
-    <a href="ohresources.html">Once Human Resources</a>
+
+    <div class="container">
+        <h1>
+            FlameBeast25's Portfolio
+        </h1>
+
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'projects')">Projects</button>
+            <!--
+            <button class="tab-link" onclick="openTab(event, 'tabID')">TabName</button>
+            -->
+        </div>
+
+        <div id="home" class="tab-content active">
+            <h1>
+                Hello!👋
+            </h1>
+            <hr>
+            <h2>
+                About Me
+            </h2>
+            <p>
+                <li>
+                    💻 Developer and Video Editor @ Overshock Games
+                </li>
+                <li>
+                    📍 Live in NA
+                </li>
+                <li>
+                    📹 YouTuber with a channel focussing on gaming
+                </li>
+                <li>
+                    😄 I enjoy meeting new people and discussing technology, projects, and everyday topics
+                </li>
+                <li>
+                    ⚡️ I love beta testing and exploring new technologies and applications
+                </li>
+            </p>
+            <hr>
+            <h2>
+                Technologies
+            </h2>
+            <p>
+                <li>
+                    Languages: Python, Java, Javascript, HTML
+                </li>
+            </p>
+            <hr>
+        </div>
+        <!--
+        <div id="template" class="tab-content">
+            <h2>Template</h2>
+            <p>This is a Template.</p>
+        </div>
+        -->
+        <div id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Once Human Resources Website
+                        </td>
+                        <td>
+                           <a href="https://flamebeast25.github.io/ohresources.html" target="_blank">Once Human Resources Website</a><br>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>
+                            Template
+                        </td>
+                        <td>
+                            <a href="link"target="_blank">Template</a><br>
+                        </td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer2">
+            <p>
+                Created by
+                <a class="a2" href="https://github.com/FlameBeast25" target="_blank">
+                    FlameBeast25
+                </a>
+            </p>
+        </div>
+        <!--
+        <div class="footer">
+            <a href="https://youtube.com/flamebeast25" target="_blank">YouTube</a>
+            <a href="https://twitch.tv/flamebeast_25" target="_blank">Twitch</a>
+            <a href="#" target="_blank">Discord</a>
+        </div>
+        -->
+    </div>
+
+    
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
 </body>
 </html>
