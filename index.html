@@ -38,6 +38,12 @@
         .a2 {
             font-size: 20px;
         }
+        .tab {
+            margin-left: 90px;
+        }
+        .tab2 {
+            margin-left: 95px;
+        }
         hr {
            height: 1px;
            background-color: #424242;
@@ -58,7 +64,7 @@
         .tabs button {
             background-color: #2e2e2e;
             border: none;
-            padding: 14px 100px;
+            padding: 14px 50px;
             color: #f0f0f0;
             border-radius: 20px;
             cursor: pointer;
@@ -96,13 +102,12 @@
         th {
             background-color: #272727;
         }
-        /* Set consistent column widths for both tables */
         table th:nth-child(1), table td:nth-child(1) {
-            width: 25%; /* Adjust percentage as needed */
+            width: 70%; /* Adjust percentage as needed */
         }
 
         table th:nth-child(2), table td:nth-child(2) {
-            width: 75%; /* Adjust percentage as needed */
+            width: 30%; /* Adjust percentage as needed */
         }
         a:hover {
             color: #46a7ff;
@@ -124,7 +129,7 @@
 
         .footer {
             margin: 0; /* Remove top margin */
-            padding-top: 0px;
+            padding-top: 20px;
             padding-bottom: 20px;
             display: flex;
             justify-content: center;
@@ -155,7 +160,7 @@
         <div class="tabs">
             <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
             <button class="tab-link" onclick="openTab(event, 'projects')">Projects</button>
-            <button class="tab-link" onclick="openTab(event, 'certifications')">Certifications</button>
+            <button class="tab-link" onclick="openTab(event, 'certifications')">Certifications & Awards</button>
             <!--
             <button class="tab-link" onclick="openTab(event, 'tabID')">TabName</button>
             -->
@@ -163,7 +168,7 @@
 
         <div id="home" class="tab-content active">
             <h1>
-                Hello!👋
+                Hello, I'm Anish!👋
             </h1>
             <hr>
             <h2>
@@ -235,11 +240,11 @@
             </table>
         </div>
         <div id="certifications" class="tab-content">
-            <h2>Certifications</h2>
+            <h2>Certifications & Awards</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Certification</th>
+                        <th>Award</th>
                         <th>Image</th>
                     </tr>
                 </thead>
@@ -249,7 +254,71 @@
                             GIAC Foundational Cybersecurity Technologies (GFACT)
                         </td>
                         <td>
-                           
+                            <blockquote class="badgr-badge tab2" style="font-family: 'Nunito', sans-serif, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/aINl5GbbR12YXetk2ki9jA?identity__email=anishguptaa18%40gmail.com "target="_blank"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/aINl5GbbR12YXetk2ki9jA/image"></a><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #ffffff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #ffffff;">Awarded: </strong>Jul 27, 2023</p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Microsoft Office Specialist Excel Associate
+                        </td>
+                        <td>
+                            <img class="tab" src="microsoft-office-specialist-excel-associate-office-2019.png" alt="MOS Excel Associate Office 2019">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Microsoft Office Specialist Outlook Associate
+                        </td>
+                        <td>
+                            <img class="tab" src="microsoft-office-specialist-outlook-associate-office-2019.png" alt="MOS Outlook Associate Office 2019">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Microsoft Office Specialist Word Associate
+                        </td>
+                        <td>
+                            <img class="tab" src="microsoft-office-specialist-word-associate-microsoft-365-apps.png" alt="MOS Word Associate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Microsoft Office Specialist PowerPoint Associate
+                        </td>
+                        <td>
+                            <img class="tab" src="microsoft-office-specialist-powerpoint-associate-office-2019.png" alt="MOS PowerPoint Associate Office 2019">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unity Certified Associate: Game Developer
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Foundations of Git Certification
+                        </td>
+                        <td>
+                            <a href="https://learn.gitkraken.com/certificates/jouvxjfq6k" target="_blank"><img class="tab" src="github_icon.png" alt="GitHub Icon"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IT Specialist - Software Development
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SANS Foundations Alumni
+                        </td>
+                        <td>
+                            
                         </td>
                     </tr>
                     <!--
@@ -267,13 +336,9 @@
         </div>
     </div>
     <div class="footer-container">
-        <div class="footer2">
-            <p>
-                Created by
-                <a class="a2" href="https://github.com/FlameBeast25" target="_blank">
-                    FlameBeast25
-                </a>
-            </p>
+        <div class="footer">
+            <a href="https://github.com/FlameBeast25" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/anishgupta25" target="_blank">Linkedin</a>
         </div>
         <!--
         <div class="footer">
